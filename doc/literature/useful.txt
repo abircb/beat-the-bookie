@@ -1,0 +1,2 @@
+1. https://towardsdatascience.com/machine-learning-algorithms-for-football-prediction-using-statistics-from-brazilian-championship-51b7d4ea0bc8
+2. https://rstudio-pubs-static.s3.amazonaws.com/319313_e7db02054f504ba58c6ce2bcae0799af.html
