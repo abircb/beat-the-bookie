@@ -1,4 +1,6 @@
 import pandas as pd
+import sys
+import os
 
 def get_data():
     seasons = ['0809', '0910', '1011', '1112', '1213', '1314', '1415', '1516', '1617', '1718', '1819', '1920', '2021']
@@ -9,4 +11,6 @@ def get_data():
     return pd.concat(data).dropna(axis=0)
 
 if __name__ == '__main__':
-    get_data().to_csv('updated-epl-training.csv', index=False)
+    path = os.path.join(sys.path[0], 'updated-epl-training.csv')
+    get_data().to_csv(path, index=False)
+    print(f"Wrote to {path}")
