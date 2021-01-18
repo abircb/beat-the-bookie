@@ -2,15 +2,67 @@ import pandas as pd
 import sys
 import os
 
+
 def get_data():
-    seasons = ['0809', '0910', '1011', '1112', '1213', '1314', '1415', '1516', '1617', '1718', '1819', '1920', '2021']
-    columns = ['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'HTHG', 'HTAG', 'HTR', 'Referee', 'HS', 'AS', 'HST', 'AST', 'HF', 'AF', 'HC', 'AC', 'HY', 'AY', 'HR', 'AR']
+    seasons = [
+        "0809",
+        "0910",
+        "1011",
+        "1112",
+        "1213",
+        "1314",
+        "1415",
+        "1516",
+        "1617",
+        "1718",
+        "1819",
+        "1920",
+        "2021",
+    ]
+    columns = [
+        "Date",
+        "HomeTeam",
+        "AwayTeam",
+        "FTHG",
+        "FTAG",
+        "FTR",
+        "HTHG",
+        "HTAG",
+        "HTR",
+        "Referee",
+        "HS",
+        "AS",
+        "HST",
+        "AST",
+        "HF",
+        "AF",
+        "HC",
+        "AC",
+        "HY",
+        "AY",
+        "HR",
+        "AR",
+    ]
 
-    data = [pd.read_csv(f'https://www.football-data.co.uk/mmz4281/{season}/E0.csv', dtype=str) for season in seasons]
-    data = [x[columns] for x in data]
-    return pd.concat(data).dropna(axis=0)
+    data = [
+        pd.read_csv(
+            f"https://www.football-data.co.uk/mmz4281/{season}/E0.csv", dtype=str
+        )
+        for season in seasons
+    ]
 
-if __name__ == '__main__':
-    path = os.path.join(sys.path[0], 'updated-epl-training.csv')
-    get_data().to_csv(path, index=False)
+    # concat data from all seasons
+    data = pd.concat([x[columns] for x in data]).dropna(axis=0)
+
+    # give each game a unique ID
+    unique_ID = [i for i in range(1, 1 + data["Date"].count())]
+    data.insert(0, "id", unique_ID)
+
+    return data
+
+
+if __name__ == "__main__":
+    path = os.path.join(os.getcwd(), "updated-epl-training.csv")
+    data = get_data()
+    data.to_csv(path, index=False)
     print(f"Wrote to {path}")
