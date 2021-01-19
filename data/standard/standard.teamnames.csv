@@ -1,40 +1,41 @@
-Standard teamname
-Arsenal
-Aston Villa
-Birmingham
-Blackburn
-Blackpool
-Bolton
-Bournemouth
-Brighton
-Burnley
-Cardiff
-Chelsea
-Crystal Palace
-Everton
-Fulham
-HomeTeam
-Huddersfield
-Hull
-Leeds
-Leicester
-Liverpool
-Man City
-Man United
-Middlesbrough
-Newcastle
-Norwich
-Portsmouth
-QPR
-Reading
-Sheffield United
-Southampton
-Stoke
-Sunderland
-Swansea
-Tottenham
-Watford
-West Brom
-West Ham
-Wigan
-Wolves
+TeamID,Standard teamname
+1,Arsenal
+2,Aston Villa
+3,AwayTeam
+4,Birmingham
+5,Blackburn
+6,Blackpool
+7,Bolton
+8,Bournemouth
+9,Brighton
+10,Burnley
+11,Cardiff
+12,Chelsea
+13,Crystal Palace
+14,Everton
+15,Fulham
+16,HomeTeam
+17,Huddersfield
+18,Hull
+19,Leeds
+20,Leicester
+21,Liverpool
+22,Man City
+23,Man United
+24,Middlesbrough
+25,Newcastle
+26,Norwich
+27,Portsmouth
+28,QPR
+29,Reading
+30,Sheffield United
+31,Southampton
+32,Stoke
+33,Sunderland
+34,Swansea
+35,Tottenham
+36,Watford
+37,West Brom
+38,West Ham
+39,Wigan
+40,Wolves
