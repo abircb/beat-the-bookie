@@ -30,10 +30,6 @@ def get_data():
         "HTAG",
         "HTR",
         "Referee",
-        "HS",
-        "AS",
-        "HST",
-        "AST",
         "HF",
         "AF",
         "HC",
@@ -62,7 +58,7 @@ def get_data():
 
 
 if __name__ == "__main__":
-    path = os.path.join(os.getcwd(), "updated-epl-training.csv")
+    path = os.path.join(os.getcwd(), "non_shot_data.csv")
     data = get_data()
     data.to_csv(path, index=False)
     print(f"Wrote to {path}")
