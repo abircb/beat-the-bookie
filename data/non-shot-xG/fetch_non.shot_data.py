@@ -5,14 +5,6 @@ import os
 
 def get_data():
     seasons = [
-        "0809",
-        "0910",
-        "1011",
-        "1112",
-        "1213",
-        "1314",
-        "1415",
-        "1516",
         "1617",
         "1718",
         "1819",
@@ -23,21 +15,17 @@ def get_data():
         "Date",
         "HomeTeam",
         "AwayTeam",
-        "FTHG",
-        "FTAG",
-        "FTR",
-        "HTHG",
-        "HTAG",
-        "HTR",
         "Referee",
-        "HF",
-        "AF",
         "HC",
         "AC",
+        "HF",
+        "AF",
         "HY",
         "AY",
         "HR",
         "AR",
+        "FTHG",
+        "FTAG",
     ]
 
     data = [
