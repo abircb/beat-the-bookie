@@ -26,6 +26,7 @@ def get_data():
         "AR",
         "FTHG",
         "FTAG",
+        "FTR",
     ]
 
     data = [
