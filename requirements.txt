@@ -54,6 +54,7 @@ pickleshare==0.7.5
 plotly==4.14.3
 prometheus-client==0.8.0
 prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1598885458782/work
+psutil==5.8.0
 ptyprocess==0.6.0
 pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
 pyparsing==2.4.7
