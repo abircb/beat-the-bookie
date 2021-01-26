@@ -2,8 +2,6 @@
 
 ### Group Coursework
 
-#### Due: Monday 11th January 2021 at 4 P.M GMT
-
 ---
 
 ## Setup
